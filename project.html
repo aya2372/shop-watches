@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="project.css"> 
+     <title>rolex</title>
+</head>
+<body>
+    
+<div class="contaner">
+    <nav>
+
+        <a href="#" class="logo">rolex</a>
+        <ul>
+            <li>
+                <a href="#">home</a>
+                <a href="#">men</a>
+                <a href="#">women</a>
+                <a href="#">search</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="text">
+            <h2>rolex watches, <br>
+            who doesent care ?!</h2>
+        </div>
+
+        <div class="image">
+            <img width="300" height="260"
+            src="pngaaa.com-1014897.png" alt=""> 
+        </div>
+
+    </div>
+</div>
+</br>
+</hr> 
+<main>
+    <section id="about us">
+        <p> weicome to our watches shop</p>
+    <div id="watches-container">
+        <!-- Watch 1 -->
+        <div class="watch-card">
+            <h3>Classic Analog Watch</h3>
+            <img src="images.jpeg" alt="Analog Watch" width="250" height="200
+          ">
+            <p>$99.99</p>
+        </div>
+        <div id="watches-container">
+            <!-- Watch 1 -->
+            <div class="watch-card">
+                <h3>Classic Analog Watch</h3>
+                <img src="pic.jpg" alt="Analog Watch" width="250" height="200
+              ">
+                <p>150$
+                    
+                </p>
+            </div>
+
+</section>
+</main>
+<div class="login-container">
+    <h2>Login</h2>
+    <form onsubmit="return validateForm()">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+<script>
+    function validateForm() {
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        if (username === '' || password === '') {
+            alert('Please enter both username and password.');
+            return false;
+        }
+
+        // You can add more sophisticated validation logic here
+
+        return true;
+    }
+</script>
+
+<form id="order-form" action="order.php" method="post">
+    <label for="watch-type">Select Watch Type:</label>
+    <select id="watch-type" name="watch-type">
+        <option value="rolex 1">Analog</option>
+        <option value="rolex 2">Digital</option>
+    </select>
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" min="1" value="1">
+
+    <button type="submit">Submit Order</button>
+</form>
+<main>
+    <h2>Order Confirmation</h2>
+
+
+
+    <p><a href="index.html">Back to Watches Shop</a></p>
+</main>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: white; /*set the default text color to white*/
+}
+
+body{
+    
+    background: linear-gradient(#111,#222);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body::after{
+    content: ""; 
+    width: 100%;
+    height: 100%;
+    background: #ffd90081;
+    position: absolute;
+    clip-path: circle(40% at right 70%);
+    z-index: -1;
+}
+
+
+.contaner{
+    width: 80%;
+    height: 80%;
+    background: rgba(255,255,255,0.1);
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+.logo{
+    color: #FFF;
+    text-decoration: none;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+
+}
+
+
+nav ul li{  
+   
+    display: inline-block; 
+    margin: 0 6px;
+    color: #fff;
+ 
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 5px;
+}
+
+
+nav ul li a:hover{
+
+color: #ffd700;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+}
+
+.content .text{
+    color: #FFF;
+    width: 35%;
+    
+    
+}
+
+.content .text .h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    
+    
+}
+
+
+.content .image{
+    width: 40%;
+   
+}
+
+.content .image .img{
+    width: 400px;
+    margin-left: 35px;
+}
+
+@media (min-width:950px) and (max-width:1150px){
+    .content .image .img{
+        width:200px
+    }
+}
+.dark-mode{
+    background-color: black;
+    color: rgba(255,255,255,0.1);
+}
+.login-container {
+    max-width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
